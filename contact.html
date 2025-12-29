@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Melvin Boulefred for your web projects. Free quote within 24h. Email, phone or form."
+    />
+    <title>Contact | Melvin Boulefred</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      media="(prefers-color-scheme: dark)"
+      href="https://grok.com/images/favicon-dark.png"
+    />
+    <link
+      rel="icon"
+      media="(prefers-color-scheme: light)"
+      href="https://grok.com/images/favicon-light.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">Melvin<span>.</span></a>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 20px;
+            "
+          >
+            <a href="contact.html" class="nav-cta">Contact Me</a>
+            <button
+              id="themeToggle"
+              style="border: 1px solid #7777"
+              class="btn btn-outline btn-small"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
+          <div class="mobile-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-close" onclick="toggleMenu()">✕</div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <span class="section-tag">Contact</span>
+        <h1 class="page-title">Let's Work Together</h1>
+        <p class="page-subtitle">
+          Have a project in mind? A question? Feel free to contact me. I respond
+          within 24h.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info-section">
+            <h2>Let’s Get in Touch</h2>
+            <p>
+              Whether you represent a company, a school, or would like to
+              discuss an opportunity or collaboration, feel free to reach out.
+            </p>
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-card-icon">@</div>
+                <div class="contact-card-content">
+                  <h3>Email</h3>
+                  <a href="mailto:melvin.boulefred@et.esiea.fr"
+                    >melvin.boulefred@et.esiea.fr</a
+                  >
+                  <p>Response within 24h</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card-icon">T</div>
+                <div class="contact-card-content">
+                  <h3>Phone</h3>
+                  <a href="#">+33 06 ** ** ** **</a>
+                  <p>Monday to Friday</p>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card-icon">L</div>
+                <div class="contact-card-content">
+                  <h3>Location</h3>
+                  <p>Agen, France</p>
+                  <p>47000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-availability">
+              <div class="availability-dot"></div>
+              <span>Currently available for a work-study opportunity</span>
+            </div>
+          </div>
+
+          <div class="contact-form-section">
+            <div class="contact-form-wrapper">
+              <h3>Send a Message</h3>
+              <div class="success-message" id="successMsg">
+                Message sent successfully! I will get back to you shortly.
+              </div>
+              <form id="contactForm" action="" method="POST">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="2f149a8a-1ded-40e5-9b8d-7da34822bac5"
+                />
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Jane Smith"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Professional Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="jane.smith@company.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone (optional)</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+33 6 XX XX XX XX"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="project">Who are you?</label>
+                  <select id="project" name="project">
+                    <option value="">Select...</option>
+                    <option value="Company">Company</option>
+                    <option value="School">School / University</option>
+                    <option value="Recruiter">Recruiter / HR</option>
+                    <option value="Client">Client</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="budget">Subject</label>
+                  <select id="budget" name="budget">
+                    <option value="">Select...</option>
+                    <option value="Work-study opportunity">
+                      Work-study opportunity
+                    </option>
+                    <option value="Internship discussion">
+                      Internship discussion
+                    </option>
+                    <option value="Technical exchange">
+                      Technical exchange
+                    </option>
+                    <option value="General inquiry">General inquiry</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Please describe your context, needs, or opportunity (company, role, timeframe, etc.)"
+                    required
+                  ></textarea>
+                </div>
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New contact message from portfolio"
+                />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://yoursite.com/contact.html?sent=true"
+                />
+                <button type="submit" class="btn btn-primary btn-full">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Why choose a work-study program?</h3>
+            <p>
+              A work-study program allows me to continue my studies at ESIEA
+              while joining your company. You will be welcoming a motivated and
+              passionate back-end developer, ready to actively contribute to
+              your projects.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What work-study schedule and duration am I looking for?</h3>
+            <p>
+              I am looking for a work-study position starting in September 2025,
+              for a duration of 1 to 2 years, following the standard ESIEA
+              schedule (3 weeks in the company / 1 week at school).
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Am I available immediately?</h3>
+            <p>
+              I am currently actively seeking a work-study position for the 2025
+              intake. I am flexible regarding location (primarily in
+              Lot-et-Garonne or Haute-Garonne) and highly motivated to integrate
+              quickly into your team.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Why choose me as your work-study student?</h3>
+            <p>
+              Passionate about development for as long as I can remember, I am
+              100% motivated, a fast learner, and bring fresh energy to the
+              team. My profile makes me versatile and ready to contribute to
+              your projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <a href="index.html" class="logo">Melvin<span>.</span></a>
+            <p>
+              Back-End Developer based in France.<br /><a
+                href="https://github.com/Blackholeisoka"
+                ><i style="font-size: 18px" class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://monkeytype.com/profile/Isokaaesthetic"
+                ><i style="font-size: 18px" class="fa-solid fa-keyboard"></i
+              ></a>
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>
+              <a href="mailto:melvin.boulefred@et.esiea.fr"
+                >melvin.boulefred@et.esiea.fr</a
+              >
+            </p>
+            <p><a href="#">+33 06 ** ** ** **</a></p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Melvin Boulefred. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  <script src="mouse.js"></script>
+  <script>
+    const styles = `
+.notification-container {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 1000;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  list-style-type: none;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.notification-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 12px 16px;
+  border-radius: 8px 8px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 24px;
+  transition: all 250ms ease;
+  animation: slideIn 300ms ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  flex: 1;
+}
+
+.notification-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.notification-text {
+  font-size: 0.9em;
+  user-select: none;
+}
+
+.notification-close {
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 200ms;
+}
+
+.notification-close:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.notification-close svg {
+  width: 16px;
+  height: 16px;
+}
+
+.notification-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  transform: translateX(0);
+  animation: progressBar 5s linear forwards;
+}
+
+@keyframes progressBar {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.success {
+  color: #047857;
+  background-color: #d1fae5;
+  border-left: 4px solid #047857;
+}
+
+.success .notification-progress-bar {
+  background-color: #047857;
+}
+
+.error {
+  color: #991b1b;
+  background-color: #fee2e2;
+  border-left: 4px solid #991b1b;
+}
+
+.error .notification-progress-bar {
+  background-color: #991b1b;
+}
+`;
+
+    if (!document.getElementById("notification-styles")) {
+      const styleSheet = document.createElement("style");
+      styleSheet.id = "notification-styles";
+      styleSheet.textContent = styles;
+      document.head.appendChild(styleSheet);
+    }
+
+    let notifContainer = document.querySelector(".notification-container");
+    if (!notifContainer) {
+      notifContainer = document.createElement("ul");
+      notifContainer.className = "notification-container";
+      document.body.appendChild(notifContainer);
+    }
+
+    function showNotification(type, message) {
+      const notif = document.createElement("li");
+      notif.className = `notification-item ${type}`;
+
+      const iconPath =
+        type === "success"
+          ? "M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+          : "m15 9-6 6m0-6 6 6m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z";
+
+      notif.innerHTML = `
+    <div class="notification-content">
+      <div class="notification-icon">
+        <svg fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" 
+                stroke-width="2" d="${iconPath}"></path>
+        </svg>
+      </div>
+      <div class="notification-text">${message}</div>
+    </div>
+    <div class="notification-icon notification-close">
+      <svg fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" 
+              stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"></path>
+      </svg>
+    </div>
+    <div class="notification-progress-bar"></div>
+  `;
+
+      notifContainer.appendChild(notif);
+
+      const closeBtn = notif.querySelector(".notification-close");
+      closeBtn.addEventListener("click", () => notif.remove());
+
+      setTimeout(() => notif.remove(), 5000);
+    }
+
+    const form = document.getElementById("contactForm");
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const originalText = submitBtn.innerHTML;
+
+      submitBtn.innerHTML = "Sending...";
+      submitBtn.disabled = true;
+
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData,
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          showNotification(
+            "success",
+            "Your message has been sent successfully!",
+          );
+          form.reset();
+        } else {
+          showNotification("error", `Error: ${data.message}`);
+        }
+      } catch (error) {
+        showNotification("error", "An error occurred. Please try again.");
+      } finally {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+  <script src="./ligth-mode.js"></script>
+</html>
