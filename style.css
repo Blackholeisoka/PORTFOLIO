@@ -339,8 +339,7 @@ h1, h2, h3 { font-family: 'Syne', sans-serif; font-weight: 800; letter-spacing: 
     .project-details { grid-template-columns: 1fr; }
     .project-features ul { grid-template-columns: 1fr; }
     .cta-content h2 { font-size: 32px; }
-    .project-card-full{display: block !important}
-    .cta-contact_button{flex-direction: column}
+    .cta-contact_button, .project-card-full{flex-direction: column}
     .about-image-card{display: none}
 }
 
