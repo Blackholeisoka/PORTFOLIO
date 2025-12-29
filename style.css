@@ -64,6 +64,7 @@ h1, h2, h3 { font-family: 'Syne', sans-serif; font-weight: 800; letter-spacing: 
 .btn-small { padding: 10px 20px; font-size: 13px; }
 .btn-large { padding: 20px 40px; font-size: 16px; }
 .btn-full { width: 100%; }
+.mobile-close{display: none}
 
 /* SECTION HEADERS */
 .section-tag { display: inline-block; font-size: 12px; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; }
