@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About Melvin Boulefred - Back-End Developer, ESIEA student, passionate about code and cybersecurity."
+    />
+    <title>About | Melvin Boulefred</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      media="(prefers-color-scheme: dark)"
+      href="https://grok.com/images/favicon-dark.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      media="(prefers-color-scheme: light)"
+      href="https://grok.com/images/favicon-light.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">Melvin<span>.</span></a>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 20px;
+            "
+          >
+            <a href="contact.html" class="nav-cta">Contact Me</a>
+            <button
+              id="themeToggle"
+              style="border: 1px solid #7777"
+              class="btn btn-outline btn-small"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
+          <div class="mobile-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-close" onclick="toggleMenu()">✕</div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <span class="section-tag">About</span>
+        <h1 class="page-title">Who Am I?</h1>
+        <p class="page-subtitle">
+          Passionate developer, ambitious student, creator of back-end
+          solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Intro -->
+    <section class="about-intro">
+      <div class="container">
+        <div class="about-intro-grid">
+          <div class="about-image-section">
+            <div class="about-image-wrapper" style="/* height: 415px; */">
+              <img
+                src="https://i.pinimg.com/736x/26/44/cc/2644ccd242dc896677e7c640774edef7.jpg"
+                class="about-image-bg"
+                style="width: 100%"
+              />
+            </div>
+            <div class="about-image-card">
+              <div class="about-image-card-label">Student</div>
+              <div class="about-image-card-value">ESIEA Agen</div>
+            </div>
+          </div>
+          <div class="about-text-section">
+            <h2>Melvin Boulefred</h2>
+            <p class="about-role">Back-End Developer</p>
+            <div class="about-bio">
+              <p>
+                Hello! I'm Melvin, a first-year student at ESIEA on the Agen
+                campus (Class 14). Passionate about computer science from a
+                young age, I decided to turn this passion into a career by
+                training as a self-taught developer.
+              </p>
+              <p>
+                My journey has allowed me to develop solid skills in back-end
+                development with technologies like ExpressJS, Node.js, PHP, C#,
+                and databases like MySQL and PostgreSQL. I love creating robust
+                and scalable server-side applications. Each project is an
+                opportunity to learn and challenge myself.
+              </p>
+              <p>
+                Beyond web development, I'm very interested in cybersecurity and
+                pentesting. I regularly participate in CTF competitions to
+                sharpen my skills. This dual expertise allows me to have a
+                comprehensive view of security in my developments.
+              </p>
+            </div>
+            <div class="about-cta">
+              <a href="contact.html" class="btn btn-primary">Contact Me</a>
+              <a href="projects.html" class="btn btn-outline"
+                >View My Projects</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">Technologies Mastered</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>Node.js / ExpressJS</h3>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+            <p>RESTful API development, authentication, middleware, routing.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>SQL / LazySQL</h3>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 50%"></div>
+            </div>
+            <p>
+              Database design, queries optimization, relationships,
+              transactions.
+            </p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>PHP / C#</h3>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 60%"></div>
+            </div>
+            <p>
+              Server-side logic, OOP, MVC, frameworks, backend architectures.
+            </p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>Git / GitHub</h3>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 60%"></div>
+            </div>
+            <p>Version control, branches, merge, LazyGit, collaboration.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>ReactJS / SCSS</h3>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 65%"></div>
+            </div>
+            <p>Front-end integration, component architecture, styling.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3>DevOps Tools</h3>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+            <p>
+              PowerShell, VirtualBox, server deployment, VIM, Docker,
+              environment setup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">20<span>+</span></div>
+            <div class="stat-label">Project Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100<span>%</span></div>
+            <div class="stat-label">Motivation</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">15<span>+</span></div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">24<span>h</span></div>
+            <div class="stat-label">Response Guaranteed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">My Values</span>
+          <h2 class="section-title">How I Work</h2>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-number">01</div>
+            <h3>Quality</h3>
+            <p>
+              I focus on writing clean, readable, and maintainable code that
+              meets project standards and long-term needs.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-number">02</div>
+            <h3>Communication</h3>
+            <p>
+              I value clear and transparent communication to ensure alignment
+              with the team and project objectives.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-number">03</div>
+            <h3>Deadlines</h3>
+            <p>
+              I understand the importance of timelines and work consistently to
+              meet agreed-upon deadlines.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-number">04</div>
+            <h3>Passion</h3>
+            <p>
+              Driven by curiosity and motivation, I continuously improve my
+              skills to deliver better technical solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Convinced?</h2>
+          <p>Let's talk about your project and see how I can help you.</p>
+          <a href="contact.html" class="btn btn-primary btn-large"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <a href="index.html" class="logo">Melvin<span>.</span></a>
+            <p>
+              Back-End Developer based in France.<br /><a
+                href="https://github.com/Blackholeisoka"
+                ><i style="font-size: 18px" class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://monkeytype.com/profile/Isokaaesthetic"
+                ><i style="font-size: 18px" class="fa-solid fa-keyboard"></i
+              ></a>
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>
+              <a href="mailto:melvin.boulefred@et.esiea.fr"
+                >melvin.boulefred@et.esiea.fr</a
+              >
+            </p>
+            <p><a href="#">+33 06 ** ** ** **</a></p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Melvin Boulefred. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script src="mouse.js"></script>
+  <script src="./ligth-mode.js"></script>
+</html>
