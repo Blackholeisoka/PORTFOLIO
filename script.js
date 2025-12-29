@@ -1,7 +1,17 @@
 function toggleMenu() {
     const mobileMenu = document.getElementById('mobileMenu');
+    const spanTwo = document.querySelector('.mobile-toggle .span-two');
+    
     mobileMenu.classList.toggle('active');
     document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    
+    if (mobileMenu.classList.contains('active')) {
+        spanTwo.style.transform = 'translateX(2.5px)';
+        spanTwo.style.width = '20px';
+    } else {
+        spanTwo.style.transform = '';
+        spanTwo.style.width = '';
+    }
 }
 
 window.addEventListener('scroll', () => {
